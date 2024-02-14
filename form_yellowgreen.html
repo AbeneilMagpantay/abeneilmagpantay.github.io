@@ -1,27 +1,36 @@
 <! Abeneil Magpantay, John Ken Lanon !>
 <!DOCTYPE html>
 <html>
-<style>
-form {
-    margin: auto;
-}
-</style>
-
 <head>
-    <title>Registration form</title>
+    <title>Registration Form</title>
+
 </head>
 <body>
-
-<h1>Registration Form</h1>
-
-<form>
-    Username: <br>
-    <input type="text" name="username"> <br><br>
-    Password: <br>
-    <input type="password" name="password"> 
-</form>
-
+    <h1>Registration Form</h1>
+    <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="nickname">Nick Name:</label><br>
+        <input type="text" id="nickname" name="nickname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="dob">Date of Birth (dd/mm/yyyy):</label><br>
+        <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy"><br>
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male"><br>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female"><br>
+        <label for="female">Female</label><br>
+        <label for="mobile">Mobile:</label><br>
+        <input type="text" id="mobile" name="mobile"><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address"></textarea><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
 </body>
 </html>
-
-
