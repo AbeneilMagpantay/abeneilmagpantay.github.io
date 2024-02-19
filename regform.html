@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        form {
+            width:   30%;
+            margin:   0 auto;
+            background-color: white;
+            padding:   20px;
+            border:   5px solid navy;
+            border-radius:   10px;
+            box-shadow:   0   0   10px rgba(0,0,0,0.3);
+        }
+        label {
+            display: block;
+            margin:   10px   0;
+            font-weight: bold;
+            color: navy;
+        }
+        input, textarea {
+            width:   80%;
+            padding:   5px;
+        }
+        input[type=radio] {
+            margin-right:   10px;
+        }
+        input[type=submit], input[type=reset] {
+            width:   30%;
+            margin:   10px   5%;
+            border: none;
+            border-radius:   5px;
+            cursor: pointer;
+        }
+        input[type=submit] {
+            background-color: green;
+            color: white;
+            margin-left:   10%;
+        }
+        input[type=reset] {
+            background-color: red;
+            color: white;
+            margin-right:   10%;
+        }
+        .gender-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom:   10px;
+        }
+          .gender-group label {
+             display: flex;
+              align-items: center;
+              margin-right: 5px;
+}
+        .gender-group input[type=radio] {
+            margin-right:   2px;
+        }
+        .spacer {
+            margin-right: 5px;
+        }
+        label[for=gender] {
+            margin-bottom: 10px; /* Added margin */
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname">
+        <label for="nickname">Nick Name:</label>
+        <input type="text" id="nickname" name="nickname">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <label for="dob">Date of Birth (dd/mm/yyyy):</label>
+        <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy">
+        <label for="gender">Gender:</label> <!-- Moved label -->
+        <div class="gender-group">
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male">
+                Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female">
+                Female
+            </label>
+            <label for="other">
+                <input type="radio" id="other" name="gender" value="other">
+                Other
+            </label>
+            <span class="spacer"></span>
+        </div>
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
